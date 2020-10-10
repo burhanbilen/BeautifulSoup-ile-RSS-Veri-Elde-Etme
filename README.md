@@ -1,0 +1,1 @@
+# BeautifulSoup-ile-Veri-Elde-Etme
