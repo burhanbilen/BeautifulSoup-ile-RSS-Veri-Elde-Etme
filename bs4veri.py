@@ -15,7 +15,7 @@ for i in siteler:
     req = requests.get(i, headers=headers)
     soup = BeautifulSoup(req.content,"lxml")
     metin = soup.select('item')
-    for j in metin:  # ELDE EDİLEN TÜM SAYFANIN HER 'İTEM' KISMINI DÖNGÜYLE SAĞLAMA 
+    for j in metin:
         haber = dict()
         haber['Başlık'] = j.title.text.strip()
         haber['Açıklama'] = j.description.text.strip()
